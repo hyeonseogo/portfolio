@@ -44,10 +44,10 @@
       <!-- Home 시작-->
       <section id="home">
         <img class="home__avatar" src="./images/hs.jpg" alt="Hyeon's profile" />
-        <br class="home__title">
-        <h1> 안녕하세요. </br>
-        <strong class="home__title--string">현서</strong>입니다.</h1>
-
+        <h2 class="home__title">
+          안녕하세요. <br />
+          <strong class="home__title--string">현서</strong>입니다.
+        </h2>
         <p class="home__description">
           우주에서 가장 뛰어나고 싶은 AI 개발자 현서입니다!!
         </p>
@@ -71,19 +71,19 @@
 
         <ul class="skills">
           <li class="skill">
-            <i class="fa-brands fa-html5 skill__icon" ></i>
+            <i class="fa-brands fa-html5 skill__icon"></i>
             <p class="skill__title">Front-end</p>
-            <p class="skill__title">HTML, CSS, JavaScript, Node.js, React</p>
+            <p>HTML, CSS, JavaScript, Node.js, React</p>
           </li>
           <li class="skill">
             <i class="fa-solid fa-mobile skill__icon"></i>
             <p class="skill__title">Mobile</p>
-            <p class="skill__title">Android, IOS, Kotlin, React-Native</p>
+            <p>Android, IOS, Kotlin, React-Native</p>
           </li>
           <li class="skill">
             <i class="fa-solid fa-rocket skill__icon"></i>
             <p class="skill__title">AI</p>
-            <p class="skill__title">Tensorflow, Python, Pytorch, Numpy</p>
+            <p>Tensorflow, Python, Pytorch, Numpy</p>
           </li>
         </ul>
 
@@ -94,56 +94,63 @@
               <p class="job__name">건국대학교사범대학부속고등학교</p>
               <p class="job__period">2017~2020</p>
             </div>
-          </li class="job">
-          <img class="job__img" src="./images/kongju.png" alt="kongju" />
-          <div>
-            <p class="job__name">국립공주대학교</p>
-            <p class="job__period">2020~2024</p>
-          </div>
-          <li></li>
+          </li>
+          <li class="job">
+            <img class="job__img" src="./images/kongju.png" alt="kongju" />
+            <div>
+              <p class="job__name">국립공주대학교</p>
+              <p class="job__period">2020~2024</p>
+            </div>
+          </li>
         </ul>
       </section>
       <!-- About 끝-->
 
       <!--skills 시작-->
-      <section>
-        <h2>기술</h2>
-        <p>언어 및 도구</p>
+      <section id="skills" class="section">
+        <div class="max-container">
+        <h2 class="title">기술</h2>
+        <p class="description">언어 및 도구</p>
         <p>
           Lorem ipsum dolor sit amet consectetur adipisicing elit. Unde ipsa
           excepturi reiciendis. Quae vero magnam asperiores et consequatur
           incidunt sed unde ab sit numquam? Illum facilis deserunt qui quia
           aliquam!
         </p>
-        <div>
-          <section>
-            <h3>언어</h3>
+        <div class="tools">
+          <section class="tools__coding">
+            <h3 class="tools__title">언어</h3>
             <ul>
-              <li>
-                <div><span>HTML</span><span>100%</span></div>
-                <div><div style="width: 100%"></div></div>
+              <li class="bar">
+                <div class="bar_metadata">
+                  <span>HTML</span><span>100%</span>
+                </div>
+                <div class = "bar__bg">
+                    <div class = "bar__value" style="width: 100%">
+                </div>
+            </div>
               </li>
-              <li>
-                <div><span>CSS</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
+              <li class="bar">
+                <div class="bar_metadata"><span>CSS</span><span>90%</span></div>
+                <div class = "bar__bg"><div class = "bar__value" style="width: 90%"></div></div>
               </li>
-              <li>
-                <div><span>JavaScript</span><span>80%</span></div>
-                <div><div style="width: 80%"></div></div>
+              <li class="bar">
+                <div class="bar_metadata"><span>JavaScript</span><span>80%</span></div>
+                <div class = "bar__bg"><div class = "bar__value" style="width: 80%"></div></div>
               </li>
-              <li>
-                <div><span>Java</span><span>70%</span></div>
-                <div><div style="width: 70%"></div></div>
+              <li class="bar">
+                <div class="bar_metadata"><span>Java</span><span>70%</span></div>
+                <div class = "bar__bg"><div class = "bar__value" style="width: 70%"></div></div>
               </li>
-              <li>
-                <div><span>Python</span><span>90%</span></div>
-                <div><div style="width: 90%"></div></div>
+              <li class="bar">
+                <div class="bar_metadata"><span>Python</span><span>90%</span></div>
+                <div class = "bar__bg"><div class = "bar__value" style="width: 90%"></div></div>
               </li>
             </ul>
           </section>
 
-          <section>
-            <h3>도구</h3>
+          <section class="tools__tools">
+            <h3 class="tools__title">도구</h3>
             <ul>
               <li>Visual Studio Code</li>
               <li>IntelliJ</li>
@@ -153,8 +160,8 @@
             </ul>
           </section>
 
-          <section>
-            <h3>기타</h3>
+          <section class="tools__etc">
+            <h3 class="tools__title">기타</h3>
             <ul>
               <li>Git</li>
               <li>SLACK</li>
@@ -162,6 +169,7 @@
             </ul>
           </section>
         </div>
+    </div>
       </section>
 
       <!--skill 끝-->
@@ -258,6 +266,7 @@
             </a>
           </li>
         </ul>
+    </div>
       </section>
       <!--work 끝-->
 
